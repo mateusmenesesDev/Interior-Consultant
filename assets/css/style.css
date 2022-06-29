@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #FFF;
+    box-sizing: border-box;
+} 
+
+body {
+    background-color: #181719;
+    height: 100vh;
+}
+
+a:visited {
+    color: #FFF;
+} 
+
+header {
+    padding-top: 50px;
+    
+}
+header .logo-btn a{
+    font-size: 14px;
+    display: inline-block; 
+    padding: 8px; 
+    border: 1px solid #FFF; 
+    text-transform: uppercase;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 200;
+}
+
+header .logo-btn a:hover{
+    background-color: #FFF;
+    color: #000;
+}
+
+.container {
+    max-width: 1280px; 
+    padding: 0 20px;
+    margin: auto;
+}
+
+.menu {
+    gap: 150px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+   
+
+}
+header .nav ul{
+    display: flex; 
+    gap: 85px; 
+    /* background-color: red; */
+}
+
+header .nav ul a{
+    display: inline-block; 
+    padding: 20px 0;
+    /* background-color: blue; */
+}
+
+header .nav ul a li{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 500;
+}
+
+header .nav ul a li.active{
+    font-weight: 700;
+}
+header .nav ul a:hover{
+    border-bottom: solid 2px #FFF;
+}
+.container .main-section {
+    height: calc(100vh - 112px);
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.container .main-section .main-section-text--title {
+    font-size: 48px;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+}
+
+.container .main-section .main-section-text--text {
+    max-width: 410px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+}
+
+.container .main-section .main-section-text--button {
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Montserrat', serif;
+}
+
+.container .main-section .main-section-text--button:hover,
+.container .main-section .main-section-text--button:hover a{
+    background-color: #FFF;
+    color: #000;
+}
+
+
+.container .main-section .main-section-text--button::after {
+    content: '\25BA';
+    margin-left: 10px;
+}
+
+
+.container .main-section .main-section-image--photobox{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: flex-end; */
+    background-image: url('../image/photo1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 820px;
+    height: 500px;
+}
+
+.container .main-section .main-section-image--author-card {
+    /* margin-right: 40px; */
+    align-self: flex-end;
+    width: 320px;
+    position: relative; 
+    top: 475px; 
+    left: 400px;     
+    padding: 15px 25px;
+    background-color: #181719;
+}
+
+.container .main-section .main-section-image--author-card-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.container .main-section .main-section-image--author-card-header-worker--photo {
+    max-width: 55px;
+}
+
+.container .main-section .main-section-image--author-card-header-worker--photo img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+footer {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
